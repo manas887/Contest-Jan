@@ -38,10 +38,17 @@ function addData() {
 
 function removeAdmin() {
   //Write your code here
-  arr.filter((element) => {
-    if (element.profession != "admin")
-      console.log(element);
-  })
+   for(let i=0;i<arr.length;i++){
+        if(arr[i].profession=="admin"){
+            arr.pop(arr[i]);
+        }
+    }
+    console.log(arr);
+  
+    //   arr.filter((element) => {
+    //     if (element.profession != "admin")
+    //       console.log(element);
+    //   })
 
 }
 
@@ -51,9 +58,9 @@ function concatenateArray() {
   { id: 6, name: "jaz", age: "25", profession: "itern" },
   { id: 7, name: "kiran", age: "29", profession: "developer" }]
 
-  arr = [...arr, ...arr2]
-  console.log(arr);
-  // let arr3 = arr.concat(arr2);
-  // console.log(arr3)
+  // arr = [...arr, ...arr2]
+  // console.log(arr);
+  let arr3 = arr.concat(arr2);
+  console.log(arr3);
 }
 
